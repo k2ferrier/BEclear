@@ -109,7 +109,7 @@ makeBoxplot <- function(data, samples, score, bySamples = FALSE, col = "standard
     {
       s <- as.character(samples[
         samples$batch_id == batches[i],
-        "sample_id"
+        sample_id
       ])
       boxplotData[[as.character(batches[i])]] <- as.vector(as.matrix(
         data[, s]
@@ -175,7 +175,7 @@ makeBoxplot <- function(data, samples, score, bySamples = FALSE, col = "standard
     {
       s <- as.character(samplesNew[
         samplesNew$sample_id == barcodes[i],
-        "sample_id"
+        sample_id
       ])
       boxplotData[[as.character(barcodes[i])]] <- as.vector(as.matrix(
         data[, s]
